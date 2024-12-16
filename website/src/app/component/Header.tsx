@@ -26,7 +26,11 @@ export default function Header(){
 <div className="flex space-x-9 ">  
    <Image src={"/vector.png"} width={23.33} height={18.67} alt="vector man" className=""/>
    <Image src={"/search.png"} width={22.17} height={22.17} alt="vector man" className=""/>
+
+    <Link href="./singalProduct">
     <Image src={"/heart.png"} width={23.33} height={20.81} alt="vector man" className=""/>
+    </Link>
+ 
   
   <Link href="./cart">
     <Image src={"/cart.png"} width={24.53} height={22.06} alt="vector man" className="" />
