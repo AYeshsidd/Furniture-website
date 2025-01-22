@@ -13,20 +13,17 @@ export default function Home() {
   return (
 
 <>
-    
-<div className="relative -top-4 ">
-                <Image src={"/blur.png"} width={1440} height={316} alt="bg" />
-
-                <div className="absolute top-[15%] left-[50%] transform -translate-x-1/2 flex justify-center flex-col items-center">
+      <div className="bg-cover bg-center bg-no-repeat bg-[url('/blur.png')] h-[316px]">
+                <div className="relative top-[15%] left-[50%] transform -translate-x-1/2 flex justify-center flex-col items-center">
                     <Image src={"/mainlogo.png"} width={77} height={77} alt="Logo" />
-                    <h3 className="font-bold text-3xl">Checkout</h3>
+                    <h3 className="font-bold text-2xl md:text-3xl">Checkout</h3>
                     <div className="flex gap-2">
-                        <span className="font-medium text-base">Home | </span><span className="font-light text-base">checkout</span>
+                        <span className="font-medium text-base">Home | </span>
+                        <span className="font-light text-base">checkout</span>
                     </div>
                 </div>
             </div>
-
-
+    
 
     <div className="p-5">
       <h1 className="whitespace-nowrap text-[2.25rem] font-semibold p-8">
