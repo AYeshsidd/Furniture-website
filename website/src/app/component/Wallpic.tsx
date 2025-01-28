@@ -1,11 +1,10 @@
-  
-export default function Wallpic() {
+  export default function Wallpic() {
     return (
       <div
-        className="flex flex-col md:flex-row h-auto w-full max-w-[1440px] mx-auto relative bg-cover bg-center rounded-xl py-8 md:py-16"
+        className="flex flex-col md:flex-row h-auto w-full md:max-w-[1440px] mx-auto relative bg-cover bg-center rounded-xl py-8 md:py-36"
         style={{ backgroundImage: "url('./bgwall.png')" }}
       >
-        <div className="bg-[#FFF3E3] relative md:left-[50%] top-10 px-6 py-6 md:py-8 md:h-[400px] w-full md:w-[40%]">
+        <div className="bg-[#FFF3E3] relative md:left-[50%] md:top-6 top-8 px-6 py-6 md:py-8 md:h-[400px] w-full md:w-[48%]">
           <p className="font-semibold text-center md:text-left my-4 text-md md:text-lg">
             New Arrival
           </p>
@@ -18,7 +17,7 @@ export default function Wallpic() {
             Perspiciatis voluptas quidem enim doloremque.
           </p>
   
-          <button className="bg-[#B88E2F] my-6 py-3 px-10 text-sm text-white font-bold w-full sm:w-auto md:w-auto">
+          <button className="bg-[#B88E2F] hover:scale-105 my-6 py-3 px-10 text-sm text-white font-bold w-full sm:w-auto md:w-auto ">
             BUY NOW
           </button>
         </div>
