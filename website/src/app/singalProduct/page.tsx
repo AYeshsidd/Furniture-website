@@ -1,4 +1,3 @@
-
 import { FaFacebook } from "react-icons/fa";
 import { IoStarSharp } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
@@ -8,23 +7,25 @@ import Link from "next/link";
 export default function Singalproduct() {
     return(
     <>
-    <div className="flex ">
-<div className="flex-col mx-20 space-y-7 rounded-lg">
-<img src="Outdoorsofa.png" width={83} height={55} alt="" className="bg-[#F9F1E7]" />
-<img src="chairs3.png" width={76} height={80} alt="" className="bg-[#F9F1E7]" />
+     <div className="md:flex">
+<div className="flex md:flex-col my-9 md:mx-20 md:space-y-7 space-x-1 rounded-lg">
+
+<img src="chairs3.png" width={76} height={80} alt="" className="bg-[#F9F1E7]"/>
 <img src="sofa 3.png" width={83} height={115} alt="" className="bg-[#F9F1E7]" />
+<img src="Outdoorsofa.png" width={83} height={55} alt="" className="bg-[#F9F1E7]" />
 <img src="Maya.png" width={83} height={55} alt="" className="bg-[#F9F1E7]" />
+
 </div>
 
-<div>
+<div className="">
     <img src="wallsofa.png" width={481} height={500} alt="" className="bg-[#F9F1E7] rounded-lg" />
 </div>
 
-<div className="mx-12">
-     <p className="w-[282px] h-[63px]  font-normal  text-4xl">Asgaard sofa</p>
-     <p className="w-[173px] h-[36px] font-medium text-2xl text-[#9F9F9F]">RS.250,000.00</p>
+ <div className="mx-5 my-4 md:mx-12">
+     <p className="md:w-[282px] md:h-[63px]  font-normal text-2xl md:text-4xl">Asgaard sofa</p>
+     <p className="md:w-[173px] md:h-[36px] font-medium md:text-2xl text-[#9F9F9F] my-2">RS.250,000.00</p>
      
-     <div className="flex space-x-2 my-2 ">
+     <div className="flex space-x-2  ">
      <IoStarSharp className="text-yellow-400"/>
      <IoStarSharp className="text-yellow-400"/>
      <IoStarSharp className="text-yellow-400"/>
@@ -34,12 +35,12 @@ export default function Singalproduct() {
      
      </div> 
     
-     <p className="font-normal text-sm">Setting ipsum dolor sit amet consectetur, adipisicing elit <br /> Quos provident sequi veritatis eligendi 
+     <p className="font-normal text-sm py-2">Setting ipsum dolor sit amet consectetur, adipisicing elit <br /> Quos provident sequi veritatis eligendi 
       est molestias the <br /> obcaecati deserunt similique, vel tempore amet nisi liono <br /> sound.</p>    
    
    <h2 className="text-[#9F9F9F] my-5">Size</h2>
 
-   <div className="flex space-x-3 ">
+   <div className="flex space-x-3  ">
     <button className="px-2 py-1 rounded bg-[#B88E2F]  text-white">L</button>
     <button className="px-2 py-1 rounded bg-[#F9F1E7]">xl</button>
     <button className="px-2 py-1 rounded bg-[#F9F1E7]">xs</button>
@@ -54,12 +55,13 @@ export default function Singalproduct() {
     <button className="px-4 py-4 rounded-full bg-[#B88E2F]"></button>
     
      </div>
-<div className="my-10 space-x-3">
-     <button type="submit" className="w-[123px] py-3 border border-[#9F9F9F] rounded text-black font-medium hover:bg-gray-100 transition">
+
+<div className="md:flex my-10 md:space-x-3 space-y-2 ">
+     <button type="submit" className="w-full md:w-[123px] py-3 border border-[#9F9F9F] rounded-2xl text-black font-medium hover:bg-gray-100 transition">
           + 1  </button>
-          <button type="submit" className="w-[215px] py-3 border border-black rounded-md text-black font-medium hover:shadow-xl hover:bg-[#B88E2F] transition">
+          <button type="submit" className="w-full md:w-[215px] py-3 border border-black rounded-lg text-black font-medium hover:shadow-xl hover:scale-105 active:scale-95 hover:bg-[#B88E2F] transition">
           Add to cart </button>
-          <button type="submit" className="w-[215px] py-3 border border-black rounded-md text-black font-medium hover:bg-gray-200 transition">
+          <button type="submit" className="w-full md:w-[215px] py-3 border border-black rounded-lg text-black font-medium hover:scale-105 active:scale-95  hover:bg-gray-200 transition">
           + Compare </button>
           </div>
 
@@ -69,34 +71,37 @@ export default function Singalproduct() {
             <p>SKU &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp; SS001 </p>
             <p>Category &nbsp;:&nbsp;&nbsp; Sofas </p>
             <p>Tags &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp; Sofa,Chair,Home,Shop </p>
-            <p className="flex gap-2">Share &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;
-                <FaFacebook className="text-black text-xl"/>
-                <FaLinkedin className="text-black text-xl"/>  
-                <AiFillTwitterCircle className="text-black text-xl"/> 
+            <p className="flex space-x-4">Share &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;
+                <FaFacebook className="text-black text-xl hover:scale-150 transition-all"/>
+                <FaLinkedin className="text-black text-xl hover:scale-150 transition-all"/>  
+                <AiFillTwitterCircle className="text-black text-xl hover:scale-150 transition-all"/> 
                 </p> 
           </div>
         
     </div>
-
-
-</div>
+ 
+</div> 
 
 <div className="border-t border-[#D9D9D9] w-full my-12"></div>
-    <div className="flex justify-center gap-10 my-20">
-        <h1 className="font-medium text-2xl w-[137px] ">Description</h1>
-        <h1 className="font-normal text-2xl text-[#9f9f9f] w-[269px] ">Additional information</h1>
-        <h1 className="font-normal text-2xl text-[#9f9f9f] w-[138px] ">Reviews [5]</h1>
+    
+    <div className="md:flex justify-center text-center  md:space-x-20  md:my-20">
+        <h1 className="font-medium text-2xl md:text-3xl md:w-[137px] ">Description</h1>
+        <h1 className="font-normal text-xl md:text-2xl text-[#9f9f9f] md:w-[269px] ">Additional information</h1>
+        <h1 className="font-normal text-xl md:text-2xl text-[#9f9f9f] md:w-[138px] ">Reviews [5]</h1>
         </div>
-        <p className="my-12 mx-56 text-[#9F9F9F] text-base ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minus molestiae 
-            harum eius sint tempora culpa odio consequuntur nulla reprehenderit, est nobis magnam accusamus modi illum ipsa fugiat corrupti. <br /><br /> Voluptas earum explicabo aut officiis nobis eos illum minus reprehenderit, autem, incidunt dignissimos accusantium, 
+        
+        <div className="my-12 mx-3 lg:mx-52 md:mx-6  text-[#9F9F9F] text-sm md:text-sm"><p className=" ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minus molestiae 
+            harum eius sint tempora culpa odio consequuntur nulla rep est nobis magnam accusamus modi illum ipsa fugiat corrupti. <br /><br /> Voluptas earum explicabo aut officiis nobis eos illum minus reprehenderit, autem, incidunt dignissimos accusantium, 
              est atque corrupti fugit dolor provident? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur molestiae beatae 
              suscipit soluta nesciunt sint harum similique id repudiandae? Ducimus hic dolorem itaque impedit, eius recusandae ratione. 
              Cum, quod illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nostrum deserunt, fuga cum will be completed by them 
-</p>
-<div className="flex justify-center gap-5">
+</p> </div>
 
-<img src="ws1.png" width={605} height={348} alt="" />
-<img src="ws2.png" width={605} height={348} alt="" />
+<div className="md:flex md: flex-wrap gap-4 space-y-1 justify-center ">
+
+<img src="ws1.png" width={450} height={38} alt="" />
+
+ <img src="ws2.png" width={450} height={38} alt="" /> 
 
 </div>
 
@@ -149,17 +154,14 @@ export default function Singalproduct() {
     <p className="text-[#898989] text-base font-normal">Outdoor bar table and stool</p>
     <p className="text-base font-bold">RS:500.00</p>
   </div>
+  
+</div>
 
-  <div className="flex items-center justify-center mt-6">
+  <div className="flex items-center justify-center p-3">
   <button className="text-[#B88E2F] font-bold border border-[#B88E2F] py-2 px-12 rounded-md hover:scale-110">
     Show More
   </button>
 </div>
-
-</div>
-
-
-
 
     </>
     );
