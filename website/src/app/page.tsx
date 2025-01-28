@@ -8,15 +8,14 @@ import Image from "next/image";
 export default function Home(){
   return(
     <>
-    
 
 <Wallpic/>
 <Browse/>
 
-<p className="text-center justify-center font-bold text-4xl py-7 ">Our Products</p>
+<p className="text-center justify-center font-bold text-4xl py-7 ">Our products</p>
 
 
-<div className=" flex items-center flex-wrap justify-center gap-6 px-4 sm:px-8  py-3  lg:px-16 md:space-x-2 ">
+<div className=" flex items-center flex-wrap justify-center gap-6 px-4 sm:px-8  py-3 lg:px-16 md:space-x-2 ">
 
   <div className="flex flex-col rounded-2xl bg-[#F4F5F7]  space-y-2 py-4 px-4 max-w-[285px] w-full">
 <Image  src={"/decoration.png"} width={285} height={301} alt="LOGO" className="bg-white"/>
@@ -56,7 +55,7 @@ export default function Home(){
 
 {/* 2nd row */}
 
-<div className=" flex justify-evenly items-center py-3 md:space-x-2 ">
+<div className=" grid md:grid-cols-4 gap-2 sm:grid-cols-2 justify-evenly p-4 ">
 
   <div className="flex flex-col  py-4 px-4  max-w-[285px] w-full rounded-2xl bg-[#F4F5F7]  space-y-2">
 <Image  src={"/lamp.png"} width={285} height={301} alt="LOGO" className="bg-white"/>
@@ -95,56 +94,50 @@ export default function Home(){
 <br />
 
 <div className="flex items-center justify-center mt-6">
-  <button className="text-[#B88E2F] font-bold border border-[#B88E2F] py-2 px-6 rounded-md">
+  <button className="text-[#B88E2F] font-bold border border-[#B88E2F] hover:scale-90 py-2 px-6 rounded-md">
     Show More
   </button>
 </div>
 {/* Another section starts */}
 
 
-<div className=" bg-[#FCF8F3] py-16 my-12">
-        <div className="mx-24">
+<div className=" bg-[#FCF8F3] py-10 my-12 lg:w-full ">
+        <div className="sm:mx-32 sm:text-left space-y-9  ">
 
-        <h1 className=" font-bold text-4xl ">50 + Beautiful rooms <br />inspiration</h1>
-        <p className="py-4"> Our designer already made a lot of beautiful prototype <br /> of rooms that
-          inspire you
-        </p>
-        <button className="bg-[#B88E2F] my-2 px-9 py-2 font-semibold text-white">Explore More</button>
-        </div>
-
+        <h1 className="mx-6 leading-tight font-bold md:text-4xl">50 + Beautiful rooms <br className="hidden sm:block" />inspiration</h1>
         
-         <div className="flex relative left-[570px] -top-60">
-        <Image src={"/fiveimages.png"} width={404} height={582} alt="5 pics" /> 
-
-         
-        <div className="slideImages">
-        <Image src={"/furnitureset.png"} width={372} height={486} alt="furniture" />
+        <p className="sm:text-base mx-6">Our designer already made a lot of beautiful prototype <br className="" /> of rooms that
+          inspires
+        </p>
+        
+        <div className="mx-6 flex justify-center sm:justify-start ">
+        <button className="bg-[#B88E2F] my-2 p-3 rounded-lg  font-semibold text-white ">Explore More</button>
         </div>
-        </div> 
-        <Image src={"/indicator.png"} width={72} height={1} alt={"selector"} className="relative left-[990px] -top-72"/>
-       </div> 
+       
+        <div className="mx-5 grid grid-cols-2 gap-1">
+        <Image src={"/fiveimages.png"} width={404} height={582} alt="5 pics" className="md:mx-24"/> 
+       
+        <Image src={"/furnitureset.png"} width={372} height={486} alt="furniture"className="md:mx-24" />
+       
+        </div>
+       
+        </div>
+
+</div> 
 
        <p className="text-center text-[#616161] text-xl">Share your setup with</p>
        <p className="text-center text-[#3A3A3A] font-bold text-4xl">#FuniroFurniture</p>
 
-       <div className="flex my-9">
-       <Image src={"/chairs.png"} width={252} height={300} alt="furniture" />
-       <Image src={"/chair1.png"} width={192} height={286} alt="furniture" />
-       <Image src={"/spoon.png"} width={212} height={216} alt="furniture" />
-       <Image src={"/bed.png"} width={232} height={286} alt="furniture" />
-       <Image src={"/food.png"} width={242} height={223} alt="furniture" />
-       <Image src={"/pot.png"} width={242} height={223} alt="furniture" />
-       <Image src={"/frame.png"} width={242} height={223} alt="furniture" />
-
+       <div className="my-9 grid grid-cols-3 gap-1 lg:flex lg:justify-evenly   bg-[#FCF8F3]   ">
+       <Image src={"/chair1.png"} width={181} height={323} alt="furniture"className=" " />
+       <Image src={"/frame.png"} width={188} height={242} alt="furniture" className=" "/>
+       <Image src={"/food.png"} width={225} height={433} alt="furniture" className=" "/>
+       <Image src={"/spoon.png"} width={158} height={196} alt="furniture" className=" "/>
+       <Image src={"/bed.png"} width={190} height={348} alt="furniture"className=" " />
+       <Image src={"/chairs.png"} width={195} height={392} alt="furniture" className=" "/>
+       <Image src={"/pot.png"} width={244} height={242} alt="furniture" className=" "/>
 
        </div>
-
-
-
-
-    
-    
-    
-    </>
+  </>
   );
 }
