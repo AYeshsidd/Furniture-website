@@ -8,26 +8,25 @@ import { FaLocationDot } from "react-icons/fa6";
 export default function contact() {
     return (
         <>
-            <div className="relative -top-4 ">
-                <Image src={"/blur.png"} width={1440} height={316} alt="bg" />
-
-                <div className="absolute top-[15%] left-[50%] transform -translate-x-1/2 flex justify-center flex-col items-center">
-                    <Image src={"/mainlogo.png"} width={77} height={77} alt="Logo" />
-                    <h3 className="font-bold text-3xl">Contact</h3>
-                    <div className="flex gap-2">
-                        <span className="font-medium text-base">Home | </span><span className="font-light text-base">contact</span>
-                    </div>
-                </div>
-            </div>
-
-            <div className="text-center my-32">
-                <p className="font-bold text-4xl">Get in Touch With Us</p>
-                <p className="py-3 font-normal text-base max-w-3xl mx-auto">
+           <div className="bg-cover bg-center bg-no-repeat bg-[url('/blur.png')] h-[316px]">
+                          <div className="relative top-[15%] left-[50%] transform -translate-x-1/2 flex justify-center flex-col items-center">
+                              <Image src={"/mainlogo.png"} width={77} height={77} alt="Logo" />
+                              <h3 className="font-bold text-2xl md:text-3xl">Contact</h3>
+                              <div className="flex gap-2">
+                                  <span className="font-medium text-base">Home | </span>
+                                  <span className="font-light text-base">contact</span>
+                              </div>
+                          </div>
+                      </div>
+                 
+           <div className="text-center my-16 md:my-28">
+                <p className="font-bold text-2xl md:text-4xl">Get in Touch With Us</p>
+                <p className="text-[#9F9F9F] p-3 md:text-center font-normal text-base md:w-[644px] md:h-48 mx-auto">
                     For more information about our product & services, please feel free to drop us an email. Our staff will always be there to help you out. Do not hesitate!
                 </p>
             </div>
 
-            <div className="relative -top-40">
+            <div className="relative -top-20 md:-top-56">
                 <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center px-6 lg:px-20 py-12 gap-10">
                     
                     <div className="space-y-8 w-full lg:w-1/2">
@@ -76,19 +75,15 @@ export default function contact() {
                             <label htmlFor="message" className="font-medium">Message</label>
                             <textarea id="message" className="border rounded-md w-full border-gray-300 p-3" placeholder="Hi! I would like to ask about..."></textarea>
 
-                            <button type="submit" className="bg-[#B88E2F] text-white px-16 py-2 rounded-md self-start">
+                            <button type="submit" className="bg-[#B88E2F] transition-opacity hover:opacity-70 text-white px-16 py-2 rounded-md self-start">
                                 Submit
                             </button>
                         </form>
                     </div>
                 </div>
-            </div>
+                <Prefotter/>
+            </div> 
 
-
-<Prefotter/>
-
-
-    
         </>
     );
 }
