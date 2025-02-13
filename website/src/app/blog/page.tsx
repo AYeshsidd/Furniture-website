@@ -7,69 +7,62 @@ export default function contact() {
     return (
         <>
         
-            <div className="relative -top-4 ">
-                <Image src={"/blur.png"} width={1440} height={316} alt="bg" />
-
-                <div className="absolute top-[15%] left-[50%] transform -translate-x-1/2 flex justify-center flex-col items-center">
-                    <Image src={"/mainlogo.png"} width={77} height={77} alt="Logo" />
-                    <h3 className="font-bold text-3xl">Blog</h3>
-                    <div className="flex gap-2">
-                        <span className="font-medium text-base">Home | </span><span className="font-light text-base">Blog</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <div className="my-24 mx-32">
-                <Image src={"/laptop.png"} width={817} height={500} alt="Logo" />
-               <div className="flex text-base text-[#9F9F9F] my-3 space-x-20">
-                
-                <span className="flex text-base"><IoManSharp/> Admin</span>
-                <span className="text-base flex"> <BsCalendar2DateFill className="my-0"/> 14 Oct 2022 </span>
+           <div className="bg-cover bg-center bg-no-repeat bg-[url('/blur.png')] h-[316px]">
+                          <div className="relative top-[15%] left-[50%]  transform -translate-x-1/2 flex justify-center flex-col items-center">
+                              <Image src={"/mainlogo.png"} width={77} height={77} alt="Logo" />
+                              <h3 className="font-bold text-2xl md:text-3xl lg:text-4xl">Blog</h3>
+                              <div className="flex gap-2">
+                                  <span className="font-medium text-base">Home | </span>
+                                  <span className="font-light text-base">blog</span>
+                              </div>
+                      
+                          </div>
+                      
+                      </div>
+                 
+           <div className="my-20 mx-3 md:mx-16">
+              
+               <Image src={"/laptop.png"} width={817} height={500} alt="Logo" />
+               <div className="flex text-base text-[#9F9F9F] my-3 space-x-9 md:space-x-20">
+                  <span className="flex text-base"><IoManSharp/> Admin</span>
+                <span className=" text-sm md:text-base  flex"> <BsCalendar2DateFill/> 14 Oct 2022 </span>
                 <span className="text-base flex"> <BsCalendar2DateFill className="my-0 mx-1"/> Wood </span>
                 
+              </div>
            
             </div>
-           
-            </div>
 
-           <div className=" mx-32"> 
+           <div className="mx-3 md:mx-16"> 
 
+            <h1 className="text-lg my-5 md:text-3xl md:w-[517px] md:h-[45px]">Going all - in with millineal design</h1>    
 
-            <h1 className="text-3xl w-[517px] h-[45px]">Going all - in with millineal design</h1>
-            
-            <p className="text-sm text-[#9F9F9F]">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, aperiam similique quas libero qui officia dolor eius quam?
+               <p className="text-sm text-[#9F9F9F] font-serif">
+                Lorem ipsum, dolor sit amet consectetur adipc elit. Saepe, aperiam similique quas libero quit officia dolor eius quam?
                  Exercitation <br />nostrum ut dolores blanditiis a saepe culpa sunt, officia aliquid voluptates?
                  Lorem ipsum dolor sit amet consectetur adipisicing elit. hihi <br /> Fuga dolores laboriosam, blanditiis 
-                 beatae accusantium vero omnis quae illo! Quaerat officiis eaque dolore unde eius fuga et aliquid rir <br /> quae cum minu Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda eius aut voluptates vel
+                 beatae accusantium vero omnis quae illo! Quaerat officiis eaque dolore unde eius fuga et aliquid<br /> quae cum minu Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda eius aut voluptates vel
                   ipsam, nisi totam usoll <br />ullam dolore molestias provident magnam. Lorem,
                    ipsum dolor sit amet consectetur adipisicing elit.repellendus blanditiis.
                    </p>
 
                    <h2 className="text-base my-12">Read more..</h2>
 
-
-                   <div className="">
+               <div className="">
                 <Image src={"/hands.png"} width={817} height={500} alt="Logo" />
-               <div className="flex text-base text-[#9F9F9F] my-3 space-x-20">
+               <div className="flex text-base text-[#9F9F9F] my-3 space-x-4 md:space-x-20">
                 
-                <span className="flex text-base"><IoManSharp/> Admin</span>
-                <span className="text-base flex"> <BsCalendar2DateFill className="my-0"/> 14 Oct 2022 </span>
-                <span className="text-base flex"> <FaTag className="my-1 mx-1"/> Home made </span>
+                <span className="flex text-sm"><IoManSharp/> Admin</span>
+                <span className="text-sm md:text-base flex"> <BsCalendar2DateFill className="my-0 mx-1"/>14 Oct 2022 </span>
+                 <span className="text-sm flex"> <FaTag className="my-1 mx-1"/> Home made </span>        
                 
-                
-           
-            </div>
-           
+              </div>
             </div>
 
-            <div className="my-16"> 
+               <div className="my-16"> 
 
+<h1 className=" md:text-3xl w-[506px] h-[45px]">Exploring new ways of decorating</h1>
 
-<h1 className="text-3xl w-[506px] h-[45px]">Exploring new ways of decorating</h1>
-
-<p className="text-sm text-[#9F9F9F]">
+<p className="text-sm text-[#9F9F9F] font-serif">
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, aperiam similique quas libero qui officia dolor eius quam?
      Exercitan <br />nostrum ut dolores blanditiis a saepe culpa sunt, officia aliquid voluptates?
      Lorem ipsum dolor sit amet consectetur adipisicing elithii<br /> Fuga dolores laboriosam, blanditiis 
@@ -81,26 +74,20 @@ export default function contact() {
        <h2 className="text-base my-12">Read more..</h2>
 
 </div>
-
-
-                <Image src={"/coffee.png"} width={817} height={500} alt="Logo" />
-               <div className="flex text-base text-[#9F9F9F] my-3 space-x-20">
+ <Image src={"/coffee.png"} width={817} height={500} alt="Logo" />
+<div className="flex text-base text-[#9F9F9F] my-3 space-x-7 md:space-x-20">
                 
-                <span className="flex text-base"><IoManSharp/> Admin</span>
-                <span className="text-base flex"> <BsCalendar2DateFill className="my-0"/> 14 Oct 2022 </span>
-                <span className="text-base flex"> <BsCalendar2DateFill className="my-0 mx-1"/> Wood </span>
+ <span className="flex text-base"><IoManSharp/> Admin</span>
+<span className="text-base flex"> <BsCalendar2DateFill className="my-0 mx-1"/> 14 Oct 2022 </span>
+<span className="text-base flex"> <BsCalendar2DateFill className="my-0 mx-1"/> Wood </span>
                 
-           
+ </div>
+
+    <div className="my-16"> 
+
+        <h1 className="md:text-3xl w-[632px] h-[45px]">Handmade pieces that took time to make</h1>
             
-           
-            </div>
-
-           <div className="my-16"> 
-
-
-            <h1 className="text-3xl w-[632px] h-[45px]">Handmade pieces that took time to make</h1>
-            
-            <p className="text-sm text-[#9F9F9F]">
+     <p className="text-sm text-[#9F9F9F] font-serif">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, aperiam similique quas libero qui officia dolor eius quam?
                  Exercitn on <br />nostrum ut dolores blanditiis a saepe culpa sunt, officia aliquid voluptates?
                  Lorem ipsum dolor sit amet consectetur adipisicing elit. hih <br /> Fuga dolores laboriosam, blanditiis 
@@ -111,23 +98,18 @@ export default function contact() {
 
                    <h2 className="text-base my-12">Read more..</h2>
 
-
 </div>
-
-            </div>
-
-            
-<div className="flex justify-center items-center space-x-3 my-12">
-    <button className="px-5 py-3 bg-[#B88E2F] text-white">1</button>
-    <button className="px-5 py-3 bg-[#F9F1E7]">2</button>
-    <button className="px-5 py-3 bg-[#F9F1E7]">3</button>
-    <button className="px-7 py-3 bg-[#F9F1E7]">Next</button>
+</div>
+        
+<div className="flex justify-center items-center space-x-3 my-12 ">
+    <button className="px-5 py-3 bg-[#F9F1E7] font-semibold hover:bg-[#B88E2F] hover:text-white">1</button>
+    <button className="px-5 py-3 bg-[#F9F1E7] font-semibold  hover:bg-[#B88E2F] hover:text-white">2</button>
+    <button className="px-5 py-3 bg-[#F9F1E7] font-semibold hover:bg-[#B88E2F] hover:text-white">3</button>
+    <button className="px-7 py-3 bg-[#F9F1E7] font-semibold hover:bg-[#B88E2F] hover:text-white">Next</button>
 
 </div>
 
 <Prefotter/>
-
-
 </>
 );
 }
