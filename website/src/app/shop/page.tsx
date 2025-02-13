@@ -1,5 +1,3 @@
-
-
 import Image from "next/image";
 import Link from "next/link";
 import { TbGridDots } from "react-icons/tb";
@@ -21,8 +19,7 @@ export default function Shop(){
                           </div>
                       </div>
                
-                  
-            <div className=" bg-[#F9F1E7] p-4 w-full h-16  flex ">
+                  <div className=" bg-[#F9F1E7] p-4 w-full h-16  flex ">
    
             <p className="font-medium md:mx-16 mx-auto flex items-center md:space-x-9">
   
@@ -45,8 +42,7 @@ export default function Shop(){
 </p>
 </p>
 
-
-<div className="space-x-5 mx-56">
+     <div className="space-x-5 mx-56">
 
 <span className="text-xl">Show</span>
 
