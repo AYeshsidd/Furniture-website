@@ -11,38 +11,40 @@ export default function Shop(){
     return(
  <>
         
-        <div className="relative -top-4 ">
-                <Image src={"/blur.png"} width={1440} height={316} alt="bg" />
-
-                <div className="absolute top-[15%] left-[50%] transform -translate-x-1/2 flex justify-center flex-col items-center">
-                    <Image src={"/mainlogo.png"} width={77} height={77} alt="Logo" />
-                    <h3 className="font-bold text-3xl">Shop</h3>
-                    <div className="flex gap-2">
-                        <span className="font-medium text-base">Home | </span><span className="font-light text-base">shop</span>
-                    </div>
-                </div>
-            </div>
+        <div className="bg-cover bg-center bg-no-repeat bg-[url('/blur.png')] h-[316px]">
+                           <div className="relative top-[15%] left-[50%]  transform -translate-x-1/2 flex justify-center flex-col items-center">
+                               <Image src={"/mainlogo.png"} width={77} height={77} alt="Logo" />
+                               <h3 className="font-bold text-2xl md:text-3xl lg:text-4xl">Shop</h3>
+                               <div className="flex gap-2">
+                                   <span className="font-medium text-base">Home | </span>
+                                   <span className="font-light text-base">shop</span>
+                               </div>
+                       
+                           </div>
+                       
+                       </div>
+                  
+            <div className=" bg-[#F9F1E7] p-4 w-full h-16  flex ">
    
-    <div className=" bg-[#F9F1E7] p-4 relative -top-5 flex ">
-   
-            <p className="font-medium flex mx-32 items-center">
+            <p className="font-medium md:mx-16 mx-auto flex items-center md:space-x-9">
   
-  <span className="mr-2">
+  <span className="mx-2">
   
-    <PiTextAlignLeft  className="mx-6"/>
+    <PiTextAlignLeft/>
  
   </span>
  
- <span className="text-xl">Filter</span> 
+ <span className="text-xl ">Filter</span> 
 
- <span className="mx-6"><TbGridDots/>  </span>
+ <span className="mx-3"><TbGridDots/>  </span>
   
-  <span className="mx-3"><TbLayoutAlignLeft className=""/></span>
+  <span className="mx-3"><TbLayoutAlignLeft/></span>
 
-  <p className="mx-5">|</p>
+  <p className="md:mx-5 mx-3">|</p>
 
-  <p>Showing 1 - 16 of 32 results </p>
+  <p className="text-xs md:text-base">Showing 1 - 16 of 32 results </p>
 
+</p>
 </p>
 
 
