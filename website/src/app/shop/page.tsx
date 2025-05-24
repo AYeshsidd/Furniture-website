@@ -19,7 +19,7 @@ export default function Shop(){
                           </div>
                       </div>
                
-                  <div className=" bg-[#F9F1E7] p-4 w-full h-16  flex ">
+                  <div className="bg-[#F9F1E7] p-4 w-full h-16  flex ">
    
             <p className="font-medium md:mx-16 mx-auto flex items-center md:space-x-9">
   
@@ -107,11 +107,9 @@ export default function Shop(){
 
 </div>
 
-
 {/* 2nd row */}
 
 <div className="flex items-center flex-wrap justify-center gap-6 px-4 sm:px-8 py-3 lg:px-16 md:space-x-2">
-
 
   <div className="flex flex-col rounded-2xl bg-[#F4F5F7] space-y-2 py-4 px-4 max-w-[285px] w-full relative">
     <Image src={"/decoration.png"} width={285} height={301} alt="LOGO" className="bg-white" />
@@ -164,8 +162,7 @@ export default function Shop(){
 
 <div className="flex items-center flex-wrap justify-center gap-6 px-4 sm:px-8 py-3 lg:px-16 md:space-x-2">
 
-  
-  <div className="flex flex-col rounded-2xl bg-[#F4F5F7] space-y-2 py-4 px-4 max-w-[285px] w-full relative">
+   <div className="flex flex-col rounded-2xl bg-[#F4F5F7] space-y-2 py-4 px-4 max-w-[285px] w-full relative">
     <Image src={"/decoration.png"} width={285} height={301} alt="LOGO" className="bg-white" />
     
     <span className="absolute top-2 right-2 bg-red-400 text-white text-xs font-bold px-2 py-1 rounded-full">
