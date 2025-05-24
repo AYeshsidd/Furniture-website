@@ -7,7 +7,7 @@ import { PiTextAlignLeft } from "react-icons/pi";
 export default function Shop(){
 
     return(
-<>
+<div>
  <div className="bg-cover bg-center bg-no-repeat bg-[url('/blur.png')] h-[316px]">
                           <div className="relative top-[15%] left-[50%] transform -translate-x-1/2 flex justify-center flex-col items-center">
                               <Image src={"/mainlogo.png"} width={77} height={77} alt="Logo" />
@@ -266,6 +266,6 @@ export default function Shop(){
 </div>
 
 <Prefotter/>
-</>
+    </div>
     );
 }
